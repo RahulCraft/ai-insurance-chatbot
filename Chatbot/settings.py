@@ -41,7 +41,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'chatapp'
+    'chatapp',
+    'rest_framework'
 ]
 
 MIDDLEWARE = [
@@ -122,6 +123,10 @@ USE_TZ = True
 STATIC_URL = 'static/'
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+STATICFILES_DIRS = [BASE_DIR / "static"]
+
+TEMPLATES[0]['DIRS'] = [BASE_DIR / "templates"]
 
 # API KEY LOAD
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")

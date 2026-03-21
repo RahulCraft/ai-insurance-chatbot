@@ -1,0 +1,150 @@
+/* ---------------- BODY ---------------- */
+body {
+    background: #0f172a;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+}
+
+
+/* ---------------- CONTAINER ---------------- */
+.chat-container {
+    width: 400px;
+    height: 600px;
+    margin: 40px auto;
+    background: #1e293b;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+}
+
+
+/* ---------------- HEADER ---------------- */
+.chat-header {
+    background: linear-gradient(90deg, #2563eb, #1d4ed8);
+    padding: 15px;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+/* ---------------- CHAT BOX ---------------- */
+.chat-box {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* ---------------- BOT MESSAGE ---------------- */
+.bot-message {
+    background: #334155;
+    color: white;
+    padding: 10px;
+    border-radius: 12px;
+    margin: 6px;
+    max-width: 75%;
+    align-self: flex-start;
+    animation: fadeIn 0.3s ease;
+}
+
+
+/* ---------------- USER MESSAGE ---------------- */
+.user-message {
+    background: #22c55e;
+    color: white;
+    padding: 10px;
+    border-radius: 12px;
+    margin: 6px;
+    max-width: 75%;
+    align-self: flex-end;
+    animation: fadeIn 0.3s ease;
+}
+
+
+/* ---------------- INPUT SECTION ---------------- */
+.chat-input {
+    display: flex;
+    padding: 10px;
+    background: #020617;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+.chat-input button {
+    margin-left: 10px;
+    padding: 10px 15px;
+    border: none;
+    background: #2563eb;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.chat-input button:hover {
+    background: #1d4ed8;
+}
+
+
+/* ---------------- UPLOAD SECTION ---------------- */
+.upload-section {
+    padding: 10px;
+    background: #020617;
+    display: flex;
+    gap: 10px;
+}
+
+.upload-section input {
+    flex: 1;
+    color: white;
+}
+
+.upload-section button {
+    background: #22c55e;
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.upload-section button:hover {
+    background: #16a34a;
+}
+
+
+/* ---------------- SCROLLBAR ---------------- */
+.chat-box::-webkit-scrollbar {
+    width: 5px;
+}
+
+.chat-box::-webkit-scrollbar-thumb {
+    background: #64748b;
+    border-radius: 10px;
+}
+
+
+/* ---------------- ANIMATION ---------------- */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(5px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

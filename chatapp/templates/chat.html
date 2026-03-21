@@ -1,0 +1,44 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Insurance Chatbot</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+
+<body>
+
+<div class="chat-container">
+
+    <div class="chat-header">
+        🤖 Insurance Chatbot
+    </div>
+
+    <!-- Upload Section -->
+    <div class="upload-section">
+        <input type="file" id="fileInput">
+        <button onclick="uploadFile()">Upload</button>
+    </div>
+
+    <!-- Chat Area -->
+    <div class="chat-box" id="chatBox">
+        <div class="bot-message">
+            Hello 👋 Upload a document or ask me anything!
+        </div>
+    </div>
+
+    <!-- Input -->
+    <div class="chat-input">
+        <input type="text" id="messageInput" placeholder="Ask something..." />
+        <button onclick="sendMessage()">Send</button>
+    </div>
+
+</div>
+
+<!-- JS (IMPORTANT: bottom me hi rakho) -->
+<script src="{% static 'script.js' %}"></script>
+
+</body>
+</html>

@@ -1,0 +1,6 @@
+Django
+djangorestframework
+python-dotenv
+openai
+PyPDF2
+python-docx
